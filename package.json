@@ -9,7 +9,8 @@
   },
   "keywords": [
     "libopus",
-    "encoder",
+    "codec",
+    "ogg",
     "emscripten"
   ],
   "author": "Kei Sau CHING <keisau.ching@vocaltale.com>",
