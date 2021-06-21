@@ -173,7 +173,7 @@ export class Codec {
 
   delete() {
     const { opus } = this
-    opus.Encoder.destroy_handler(this.component)
+    opus.Codec.destroy_handler(this.component)
     opus._free(this.floatPointer)
     opus._free(this.bytesPointer)
     opus._free(this.int16Pointer)

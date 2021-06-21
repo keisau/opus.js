@@ -26,6 +26,7 @@ class OpusCodecWrapper {
 
         ~OpusCodecWrapper() {
             opus_encoder_destroy(encoder);
+            opus_decoder_destroy(decoder);
         }
 
         int encode_float(intptr_t in_ptr, intptr_t out_ptr, int frame_size) {
