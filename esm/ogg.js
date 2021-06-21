@@ -11,7 +11,7 @@ export class Ogg {
 
   vender = Uint8Array.from(Buffer.from('vocaltale'))
 
-  constructor(sampleRate, channels, frameSize = 1920, maxFramesPerPage = 8) {
+  constructor(sampleRate, channels, frameSize, maxFramesPerPage = 16) {
     this.sampleRate = sampleRate
     this.channels = channels
     this.frameSize = frameSize
@@ -109,12 +109,12 @@ export class Ogg {
 
   segmentPacket(packet) {
     let packetIndex = 0
-    const exportPages = []
+    const retval = []
     let { length } = packet
 
     while (length >= 0) {
       if (this.segmentTableIndex === 255) {
-        exportPages.push(this.generatePage())
+        retval.push(this.generatePage())
         this.headerType = 1
       }
 
@@ -126,13 +126,13 @@ export class Ogg {
       length -= 255
     }
 
-    this.granulePosition += (48 * this.frameSize)
+    this.granulePosition += this.frameSize
     if (this.segmentTableIndex === 255) {
-      exportPages.push(this.generatePage())
+      retval.push(this.generatePage())
       this.headerType = 0
     }
 
-    return exportPages
+    return retval
   }
 
   finalize() {
