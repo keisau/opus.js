@@ -27,3 +27,4 @@ opus.delete()
 2. Automatically fallback to `opus.asm.js` if `WASM` is not supported
 3. Support 32-bits Float formatted PCM data
 4. Lower memory usage by limiting the stack size and the heap size further 
+5. Separated encoder and decoder. (original codec is also there)

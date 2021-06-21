@@ -27,12 +27,12 @@ bind:
 init: autogen configure bind
 
 compile:
-	rm -rf ./build; \
-	mkdir -p ./build; \
-	em++ ${EMCC_OPTS} ${EMCC_NASM_OPTS} --bind -o build/opus-encoder.asm.js src/opus_encoder.cpp ${OPUS_SOURCE}/.libs/libopus.a; \
-	em++ ${EMCC_OPTS} ${EMCC_WASM_OPTS} --bind -o build/opus-encoder.js src/opus_encoder.cpp ${OPUS_SOURCE}/.libs/libopus.a; \
-	em++ ${EMCC_OPTS} ${EMCC_NASM_OPTS} --bind -o build/opus-decoder.asm.js src/opus_decoder.cpp ${OPUS_SOURCE}/.libs/libopus.a; \
-	em++ ${EMCC_OPTS} ${EMCC_WASM_OPTS} --bind -o build/opus-decoder.js src/opus_decoder.cpp ${OPUS_SOURCE}/.libs/libopus.a; \
-	em++ ${EMCC_OPTS} ${EMCC_NASM_OPTS} --bind -o build/opus-codec.asm.js src/opus_codec.cpp ${OPUS_SOURCE}/.libs/libopus.a; \
-	em++ ${EMCC_OPTS} ${EMCC_WASM_OPTS} --bind -o build/opus-codec.js src/opus_codec.cpp ${OPUS_SOURCE}/.libs/libopus.a; \
-	cp -f opus/COPYING build/COPYING.libopus;
+	rm -rf ./lib; \
+	mkdir -p ./lib; \
+	em++ ${EMCC_OPTS} ${EMCC_NASM_OPTS} --bind -o lib/opus-encoder.asm.js src/opus_encoder.cpp ${OPUS_SOURCE}/.libs/libopus.a; \
+	em++ ${EMCC_OPTS} ${EMCC_WASM_OPTS} --bind -o lib/opus-encoder.js src/opus_encoder.cpp ${OPUS_SOURCE}/.libs/libopus.a; \
+	em++ ${EMCC_OPTS} ${EMCC_NASM_OPTS} --bind -o lib/opus-decoder.asm.js src/opus_decoder.cpp ${OPUS_SOURCE}/.libs/libopus.a; \
+	em++ ${EMCC_OPTS} ${EMCC_WASM_OPTS} --bind -o lib/opus-decoder.js src/opus_decoder.cpp ${OPUS_SOURCE}/.libs/libopus.a; \
+	em++ ${EMCC_OPTS} ${EMCC_NASM_OPTS} --bind -o lib/opus-codec.asm.js src/opus_codec.cpp ${OPUS_SOURCE}/.libs/libopus.a; \
+	em++ ${EMCC_OPTS} ${EMCC_WASM_OPTS} --bind -o lib/opus-codec.js src/opus_codec.cpp ${OPUS_SOURCE}/.libs/libopus.a; \
+	cp -f opus/COPYING lib/COPYING.libopus;

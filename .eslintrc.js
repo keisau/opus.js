@@ -137,6 +137,7 @@ const config = {
     'import/no-extraneous-dependencies': 0,
     'lines-between-class-members'      : 0,
     'max-classes-per-file'             : 0,
+    'global-require'                   : 0,
   },
 }
 

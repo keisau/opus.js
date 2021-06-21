@@ -1,6 +1,13 @@
 *
 !build/*
 !lib/*
-!src/*.js
+!esm/*
 !package.json
 !README.md
+# !index.js
+# !encoder.js
+# !decoder.js
+# !codec.js
+# !ogg.js
+# !constants.js
+
