@@ -1,0 +1,38 @@
+{
+  "name": "@vocaltale/opus.js",
+  "version": "1.0.0-alpha.1",
+  "description": "Opus codec ported with emscripten, supports PCM in 32-bits Float format. Useful for Web Audio AudioWorkletProcessor",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/vocaltale/opus.js.git"
+  },
+  "keywords": [
+    "libopus",
+    "encoder",
+    "emscripten"
+  ],
+  "author": "Kei Sau CHING <keisau.ching@vocaltale.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/vocaltale/opus.js/issues"
+  },
+  "homepage": "https://gitlab.com/vocaltale/opus.js#readme",
+  "browser": {
+    "fs": false,
+    "path": false
+  },
+  "private": false,
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.14.5",
+    "@babel/preset-env": "^7.14.5",
+    "eslint": "^7.28.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "webpack": "^5.39.1",
+    "webpack-cli": "^4.7.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

@@ -1,0 +1,8 @@
+test
+.DS_Store
+
+build
+
+node_modules
+
+.npmrc
