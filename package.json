@@ -1,11 +1,11 @@
 {
   "name": "@vocaltale/opus.js",
-  "version": "1.0.0-beta.0",
+  "version": "1.0.0-beta.2",
   "description": "Opus codec ported with emscripten, supports PCM in 32-bits Float format. Useful for Web Audio AudioWorkletProcessor",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/vocaltale/opus.js.git"
+    "url": "git+https://github.com/keisau/opus.js.git"
   },
   "keywords": [
     "libopus",
@@ -15,9 +15,9 @@
   "author": "Kei Sau CHING <keisau.ching@vocaltale.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://gitlab.com/vocaltale/opus.js/issues"
+    "url": "https://github.com/keisau/opus.js/issues"
   },
-  "homepage": "https://gitlab.com/vocaltale/opus.js#readme",
+  "homepage": "https://github.com/keisau/opus.js#readme",
   "browser": {
     "fs": false,
     "path": false
