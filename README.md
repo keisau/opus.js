@@ -5,6 +5,15 @@ Inspired by [OpusScript](https://github.com/abalabahaha/opusscript) and [opus-re
 
 # Usage
 
+Install with
+```javascript
+npm i -S @vocaltale/opus.js
+
+// or
+
+yarn add @vocaltale/opus.js
+```
+
 Here is an example using Node.js to encode PCM in 32-bits floating point to opus and write it to a file using Ogg container format.
 ```javascript
 const fs = require('fs')
