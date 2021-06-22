@@ -1,6 +1,6 @@
 {
   "name": "@vocaltale/opus.js",
-  "version": "1.0.0-beta.2",
+  "version": "1.0.0-beta.3",
   "description": "Opus codec ported with emscripten, supports PCM in 32-bits Float format. Useful for Web Audio AudioWorkletProcessor",
   "main": "lib/index.js",
   "repository": {
